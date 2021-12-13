@@ -1,0 +1,120 @@
+/*=====================================
+ =              CSS START            =
+ =====================================*/
+
+.cc-card-component {
+    padding: 30px;
+}
+
+.cc-container {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0 20px;
+}
+
+.cc-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.cc-col {
+    flex: 0 0 calc(30% - 30px);
+    max-width: calc(30% - 30px);
+    padding: 30px;
+}
+
+.cc-card__title {
+    color: #ffffff;
+    font-size: 44px;
+    line-height: 60px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.cc-card__content p {
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.cc-btn {
+    border-radius: 40px;
+    display: inline-block;
+    max-width: 120px;
+    background-color: #ffffff;
+    padding:15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.cc-card__sedan {
+    background-color: #E38826;
+}
+
+.cc-card__sedan .cc-btn {
+    border:2px solid #E38826;
+    color: #E38826;
+}
+
+.cc-car__suv {
+    background-color: #006970;
+}
+.cc-car__suv .cc-btn {
+    color: #006970;
+    border:2px solid #006970;
+}
+.cc-card__luxury {
+    background-color: #004241;
+}
+.cc-card__luxury .cc-btn {
+    color: #004241;
+    border:2px solid #004241;
+}
+
+.cc-btn:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+
+}
+/*=====================================
+ =              CSS END            =
+ =====================================*/
+
+/*=====================================
+ =         MEDIA QUERY START          =
+ =====================================*/
+
+@media only screen and (max-width:768px) {
+    .cc-card-component {
+        padding: 20px 5px;
+    }    
+    .cc-col {
+        flex: 0 0 100%;
+        max-width: calc(100% - 40px);
+        padding: 30px 20px;
+    }
+}
+@media only screen and ( min-width:768px) and (max-width:992px) {
+    .cc-card-component {
+        padding: 20px 15px;
+    }    
+    .cc-col {
+        flex: 0 0 100%;
+        max-width: calc(30% - 40px);
+        padding: 30px 20px;
+    }
+}
+
+/*=====================================
+ =      MEDIA QUERY START END         =
+ =====================================*/
